@@ -1,0 +1,116 @@
+section.front{
+	min-height: 150px;
+	#mainNav li.active a{
+		color:$grey;
+	}
+}
+section#blog-page {
+	#columns{
+		-webkit-column-count: 3;
+		-webkit-column-gap: 24px;
+		-webkit-column-fill: 0;
+		-moz-column-count: 3;
+		-moz-column-gap: 24px;
+		-moz-column-fill: 0;
+		column-count: 3;
+		column-gap: 24px;
+		column-fill: 0;
+	}
+	ul.cat {
+		list-style-type:none;
+		text-align:center;
+		width:100%;
+		li{
+			display:inline-block;
+			margin-left:5%;
+			margin-right:5%;
+			&:hover a{
+				color:$blue;
+			}
+			&.active {
+				a{
+					color:$blue;
+				}
+			}
+			a{
+				text-decoration:none;
+				text-transform: uppercase;
+				color:$grey;
+				font-family: sans-serif;
+			}
+		}
+	}
+	article{
+		margin:5px;
+		position:relative;
+		display:inline-block;
+		margin-bottom: 20px;
+		padding:20px;
+		border: 1px solid $lightGrey;
+		-webkit-box-shadow:  0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+        box-shadow:  0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+        -webkit-transition: all 100ms ;
+		-moz-transition: all 100ms ;
+        -ms-transition: all 100ms ;
+        -o-transition: all 100ms ;
+		transition: all 100ms ;
+		img{
+			width:100%;
+		}
+		a.loe{
+			color:$blue;
+			float:right;
+			text-decoration:none;
+			font-size:0.8em;
+			cursor:hand;
+			cursor:pointer;
+			z-index:88888;
+		}
+		header {
+			overflow:auto;
+			.date{
+				font-size: 0.8em;
+				margin-bottom:2%;
+			}
+			h1{
+			font-size:2em;
+			text-align: left;
+			}
+			p.tag {
+			font-family:arial;
+			float:left;
+			clear:none;
+			font-size:0.6em;
+			display:block;
+			margin-right: 5px;
+			background-color:$blue;
+			color:white;
+			text-shadow:none;
+			padding-top:0px;
+			padding-bottom:0px;
+			padding-left:5px;
+			padding-right:5px;
+			line-height: 2;
+			margin-top:0px;
+			}
+		}
+		p{
+			padding:0px;
+			margin:0px;
+			font-size:0.8em;
+			line-height: 2;
+		}
+	}
+	article:before{
+		content: "";
+		width: 0px;
+		height: 0px;
+		position:absolute;
+		left:0px;
+		top:0px;
+		border-style: solid;
+		border-width: 20px 20px 0 0;
+		border-color: $lightGrey transparent transparent transparent;
+
+	}
+}

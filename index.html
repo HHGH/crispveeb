@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>Crisp - Värsked veebilahendused</title>
+	<meta name="description" content="Värsked kodulehed, logod ja muud graafilised lahendused." />
+ 	<meta name="keywords" content="veebilahendus, koduleht, erilahendus, logod, veebidisain, disain, veebileht, virtuaalserver, domeen, html5, css3, javascript, responsive, adaptive, mobile" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/min/jquery.touchSwipe.min.js"></script>
+<script src="js/modal/modernizr.custom.js"></script>
+</head>
+<body>
+	<div class="wrapper" id="front" >
+
+		<header>
+			<div class="logo"></div><!--logo-->
+		</header>
+
+		<section class="front" >
+			<div class="frontImage">
+				<p class="savi">MEIL ON SAVI.</p>
+				<p class="voolime">VOOLIME TEIE IDEED.</p>
+				<p class="tagame">Tagame Teie veebilehe atraktiivsuse ja konkurentsieelise teiste üle igas asendis.
+				</p>
+				<div class="contactUs"><a href="#contact">Võta kohe ühendust</a></div>
+			</div>
+			<nav id="mainNav">
+				<ul>
+					<li class="active"><a href="#front">KODU</a></li>
+					<li><a href="#whyUs">PAKUME</a></li>
+					<li><a href="#portfolio">PORTFOOLIO</a></li>
+					<li><a href="#blogi">BLOGI</a></li>
+					<li><a href="#contact">KONTAKT</a></li>
+				</ul>
+				<div class="openMenu"></div>
+
+			</nav>
+		</section>	<!--front-->
+
+		<div id="firstDiv" class="sectionDiv"><a href="#whyUs" class="divNool"></a></div><!-- section divider -->
+
+		<section class="whyUs" id="whyUs">
+			
+			<header>
+				<h1>PAKUME</h1>
+				<div class="contain">
+					<h2 id="first" class="hidden">Uuenduslikke graafilisi lahendusi.</h2>
+					<h2 id="second" class="hidden">Tänapäevaseid veebiehitusmeetodeid.</h2>
+					<h2 id="third" class="hidden">Unikaalset ja personaliseeritud sisuhaldussüsteemi.</h2>
+					<h2 id="fourth" class="hidden">Veebimajutust ja domeeni.</h2>
+					<h2 id="fifth" class="hidden">Meeldivat ja kiiret koostööd.</h2>
+					<h2 id="sixth" class="hidden">Erilahendusi.</h2>
+				</div><!-- container -->
+			</header>
+			<h2 class="hidden2">Uuenduslikke graafilisi lahendusi.</h2>
+			<div class="choose" id="first"></div>
+			<h2 class="hidden2">Tänapäevaseid veebiehitusmeetodeid.</h2>
+			<div class="choose" id="second"></div>
+			<h2 class="hidden2">Unikaalset ja personaliseeritud sisuhaldussüsteemi.</h2>
+			<div class="choose" id="third"></div>
+			<h2 class="hidden2">Veebimajutust ja domeeni.</h2>
+			<div class="choose" id="fourth"></div>
+			<h2 class="hidden2">Meeldivat ja kiiret koostööd.</h2>
+			<div class="choose" id="fifth"></div>
+			<h2 class="hidden2">Erilahendusi.</h2>
+			<div class="choose" id="sixth"></div>
+		</section>	<!--whyus-->
+
+		<div class="sectionDiv"><a href="#portfolio" class="divNool"></a></div><!-- section divider -->
+
+		<section class="portfolio" id="portfolio">
+			<header>
+				<h1>PORTFOOLIO</h1>
+			</header>
+			<nav id="sliderNav">
+			</nav>
+			<div id="portfolioSlider">
+				<div class="sliderContainer">
+					<div class="webSlider">
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(thumbnails/ab.png);"></div>
+							<section class="sliderText">
+								<article>
+									<header>
+										<h2>Koduleht finantsteenuste pakkujale</h2>
+										<div class="tag">Disain</div>
+										<div class="tag">Html5</div>
+										<div class="tag">Css3</div>
+									</header>
+
+									<p>Kodulehel on sellised ja sellised funktsioonid.</p>
+									<div class="md-trigger expand" data-modal="abserv"></div>
+									<a class="htmlView" link=""></a>
+								</article>
+							</section>
+						</div>
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/autok.png);"></div>
+							<section class="sliderText">
+								<article>
+									<header>
+										<h2>Veeb autokoolile</h2>
+										<div class="tag">Wordpress</div>
+										<div class="tag">Html5</div>
+										<div class="tag">Css3</div>
+									</header>
+
+									<p>Tegime kodulehe koos ilusate animatsioonide ja kasulike funktsioonidega. 
+										Disain on kah väga ilus teisel.</p>
+									<div class="md-trigger expand" data-modal="servipro"></div>
+									<a class="htmlView" link="html_vaated\erleks\index.html"></a>
+								</article>
+							</section>
+						</div>
+
+						<div class="sliderElement" >
+							<div class="sliderImg md-trigger" data-modal="servipro" style="background-image: url(img/servi.png);"></div>
+							<section class="sliderText">
+								<article>
+									<header>
+										<h2>Koduleht Servipro</h2>
+										<div class="tag">Jquery</div>
+										<div class="tag">Html5</div>
+										<div class="tag">Css3</div>
+									</header>
+
+									<p>Tegime kodulehe koos ilusate animatsioonide ja kasulike funktsioonidega. 
+										Disain on kah väga ilus teisel.</p>
+									<div class="md-trigger expand" data-modal="servipro"></div>
+									<a class="htmlView"  link="html_vaated\servipro\index.html" ></a>
+								</article>
+							</section>
+						</div>
+
+						<div class="sliderElement" >
+							<div class="sliderImg" data-modal="servipro" style="background-image: url(img/crisp.png);"></div>
+							<section class="sliderText">
+								<article>
+									<header>
+										<h2>Koduleht Crisp</h2>
+										<div class="tag">Jquery</div>
+										<div class="tag">Html5</div>
+										<div class="tag">Css3</div>
+									</header>
+
+									<p>Tegime kodulehe koos ilusate animatsioonide ja kasulike funktsioonidega. 
+										Disain on kah väga ilus teisel.</p>
+									
+									<div class="md-trigger expand" data-modal="servipro"></div>
+									<a class="htmlView" data-modal="servipro"></a>
+								</article>
+							</section>
+						</div>
+						
+
+					</div>
+					
+					<div class="next"></div>
+					<div class="prev"></div>
+					<div id="webPagination"></div>
+				</div>
+				<!-- WEBSLIDER ********************
+				***********************************
+				***********************************
+				***********************************
+				******************************-->
+				<div class="sliderContainerlogo">
+					<div class="next_logo"></div>
+					<div class="prev_logo"></div>
+					<div class="logoSlider">
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/logo1.png);"></div>
+							<div class="sliderText">
+
+							
+							</div>
+						</div>
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/logo2.png);"></div>
+							<div class="sliderText">
+							</div>
+						</div>
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/logo3.png);"></div>
+							<div class="sliderText">
+							</div>
+						</div>
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/logo3.png);"></div>
+							<div class="sliderText">
+							</div>
+						</div>
+					</div>
+
+					<div id="logoPagination"></div>
+				</div>
+				<!-- LOGOSLIDER ********************
+				***********************************
+				***********************************
+				***********************************
+				******************************-->
+				<div class="sliderContainerMuu">
+					<div class="muuSlider">
+
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/autok.png);"></div>
+							<div class="sliderText">
+							</div>
+						</div>
+
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/erleks.png);"></div>
+							<div class="sliderText">
+							</div>
+						</div>
+
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/logo3.png);"></div>
+							<div class="sliderText">
+							</div>
+						</div>
+
+						<div class="sliderElement" >
+							<div class="sliderImg" style="background-image: url(img/logo3.png);"></div>
+							<div class="sliderText">
+							</div>
+						</div>
+						
+						
+
+						
+						
+					</div>
+					<div class="next_muu"></div>
+					<div class="prev_muu"></div>
+					<div id="muuPagination"></div>
+				</div>
+				<!-- MUUSLIDER ********************
+				***********************************
+				***********************************
+				***********************************
+				******************************-->
+
+			</div><!-- portfolio slider end -->
+			
+			
+			
+		</section>
+
+		<div class="sectionDiv"><a href="#blogi" class="divNool"></a></div><!-- section divider -->
+
+		<section class="blogi" id="blogi">
+
+			<header>
+				<h1>BLOGI</h1>
+			</header>
+			<div id="columns">
+			<!--artikkel 1-->
+			<article>
+					<header>
+						<h1>Miks valida meid?</h1>
+						<div class="date">8.09.2013</div>
+						<p class="tag">CMS</p>
+						<p class="tag">Responsive</p>
+					</header>
+					<img src = "img/responsive.png"  alt = "Responsive illustration" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at porta neque. Integer id semper lorem. Etiam cursus felis eget quam accumsan, id pharetra felis venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus id tellus mi.</p>
+
+					<a class="loe" href="#">Loe lõpuni &#8594;</a>
+			</article>
+			<!--artikkel 2-->
+			<article>
+					<header>
+						<h1>Cssi võlud</h1>
+						<div class="date">8.09.2013</div>
+						<p class="tag">CMS</p>
+						<p class="tag">Responsive</p>
+					</header>
+					<img src = "img/responsive.png"  alt = "Responsive illustration" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at porta neque. Integer id semper lorem. Etiam cursus felis eget quam s mi. Phasellus id aliquet nibh. Nullam porttitor ipsum nec sollicitudin ullamcorper. Suspendisse viverra velit ut leo venenatis consequat. Nam id diam sit amet leo pulvinar consequat non ut ante. Pellentesque vehicula sem ut posuere varius.</p>
+
+					<a class="loe" href="#">Loe lõpuni &#8594;</a>
+			</article>
+			<!--artikkel 3-->
+			<article>
+					<header>
+						<h1>Responsive disain</h1>
+						<div class="date">8.09.2013</div>
+						<p class="tag">CMS</p>
+						<p class="tag">Responsive</p>
+					</header>
+					<img src = "img/responsive.png"  alt = "Responsive illustration" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at porta neque. Integer id semper lorem. Etiam cursus felis eget quam accumsan, id pharetra felis venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus id tellus mi. Phasellus id aliquet nibh. Nullam porttitor ipsum nec sollicitudin ullamcorper. Suspendisse viverra velit ut leo venenatis consequat. Nam id diam sit amet leo pulvinar consequat non ut ante. Pellentesque vehicula sem ut posuere varius.</p>
+
+					<a class="loe" href="#">Loe lõpuni &#8594;</a>
+			</article>
+			<!--artikkel 4-->
+			<article>
+					<header>
+						<h1>Miks valida meid?</h1>
+						<div class="date">8.09.2013</div>
+						<p class="tag">CMS</p>
+						<p class="tag">Responsive</p>
+					</header>
+					<img src = "img/responsive.png"  alt = "Responsive illustration" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at porta neque. Integer id semper lorem. Etiam cursus felis eget quam accumsan, id pharetra felis venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus id tellus mi. Phasellus id aliquet nibh. Nullam porttitor ipsum nec sollicitudin ullamcorper. Suspendisse viverra velit ut leo venenatis consequat. Nam id diam sit amet leo pulvinar consequat non ut ante. Pellentesque vehicula sem ut posuere varius.</p>
+
+					<a class="loe" href="#">Loe lõpuni &#8594;</a>
+			</article>
+		</div><!--columns-->
+		</section> <!--blogi-->
+
+		<div class="sectionDiv"><a href="#contact" class="divNool"></a></div><!-- section divider -->
+
+		<section class="contact" id="contact">
+			<header>
+				<h1>Õpime teineteist tundma</h1>
+			</header>
+			<form autocomplete="off">
+				
+			    <input type="text" id="name" name="username" onblur="if(this.value == '') { this.value ='Nimi';} "  onfocus="if(this.value == 'Nimi') { this.value = ''; }" value="Nimi" required />
+				
+
+			
+				<input type="email" id="mail" name="usermail" onblur="if(this.value == '') { this.value ='E-mail';} " onfocus="if(this.value == 'E-mail') { this.value = ''; }" value="E-mail" required />
+				
+
+			 
+			  	<textarea role="textbox" onblur="if(this.value == '') { this.value ='Kirjuta meile...';} " onfocus="if(this.value == 'Kirjuta meile...') { this.value = ''; }" aria-multiline="true">Kirjuta meile...</textarea>
+			  
+
+			 
+			  	<input type="submit" value="Edasta" id="button">
+			  
+
+			</form>
+		</section> <!--contact-->
+<!-- SIIA PANEME PORTFOOLIO TÄISSUURUSES PILDID -->
+
+		<div class="md-modal md-effect-2" id="servipro">
+			<div class="md-content">
+			<img class="md-content" src="suur_pilt/servipro.png"></img>
+			<div class="md-close" style="display:none;"></div>
+			</div>
+		</div>
+
+		<div class="md-modal md-effect-2" id="abserv">
+			<div class="md-content">
+			<img class="md-content" src="suur_pilt/ariteenus.jpg"></img>
+			<div class="md-close" style="display:none;"></div>
+			</div>
+		</div>
+
+		<div class="md-modal md-effect-2" id="teine">
+			<div class="md-content">
+			<img class="md-content" src="suur_pilt/servipro.png"></img>
+			<div class="md-close" style="display:none;"></div>
+			</div>		
+		</div>
+
+		<div class="md-overlay"><div class="md-close"></div></div><!-- the overlay element -->
+
+<!-- SIIN LÕPEB PORTFOOLIO TÄISSUURUSES PILDID -->
+	</div><!--wrapper-->
+	<footer>info@crisp.ee</footer>
+
+	
+
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/modal/classie.js"></script>
+		<script src="js/modal/modalEffects.js"></script>
+		<script src="js/scrollbar/perfect-scrollbar.js"></script>
+		<script src="js/scrollbar/jquery.mousewheel.js"></script>
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/modal/cssParser.js"></script>
+		<script src="js/modal/css-filters-polyfill.js"></script>
+		<script src="js/min/jscript.min.js"></script>
+		
+</body>
+</html>

@@ -1,0 +1,22 @@
+$grey: #4d4d4e;
+$lightGrey: #68676c;
+$divGrey: #4c4c4c;
+$blue: #53c6d6;
+$darkGrey: #1c1c1c;
+
+@import "_normalize.scss";
+@import "_component.scss";
+@import "_perfect-scrollbar.scss";
+@import "_common.scss";
+@import "_fonts.scss";
+
+@import "_header.scss";
+
+@import "_pakume.scss";
+@import "_portfoolio.scss";
+@import "_blogi.scss";
+@import "_contact.scss";
+@import "_footer.scss";
+
+@import "_blog.scss";
+@import "_post.scss";

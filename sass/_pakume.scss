@@ -1,0 +1,113 @@
+
+
+section.whyUs {
+	margin-top: 50px;
+
+	header{
+		margin-bottom:0px;
+		width:100%;
+		height:auto;
+		clear:both;
+		h1{
+			width:100%;
+			text-align:center;
+			margin:0px;
+			padding:0px;
+		}
+		h2{
+			color: $lightGrey;
+			width:100%;
+			text-align:center;
+			font-size:2.5em;
+			margin:0px;
+			display:block;
+			position:absolute;
+			left:0px;
+		}
+
+	}
+	.choose {
+		height:140px;
+		width:29%;
+		margin-left:2%;
+		margin-right:2%;
+		margin-top:2%;
+		margin-bottom:2%;
+		cursor: hand;
+		cursor: pointer;
+		float:left;
+		background-repeat:no-repeat;
+		background-size: contain;
+		background-position:center center;
+		opacity:0.8;
+		
+
+	}
+	
+
+	.contain {
+		height:100px;
+		width:100%;
+		overflow:hidden;
+		position:relative;
+	}
+
+	h2.hidden{
+		margin-top:-120px;
+		opacity:0;				
+	}
+	h2.hidden2{
+		opacity:0;
+		display:none;
+	}
+	div#first{
+		background-image: url(../img/graaf.png);
+	}
+	div#second{
+		background-image: url(../img/meetodid.png);
+	}
+	div#third{
+		background-image: url(../img/sisuh.png);
+	}
+	div#fourth{
+		background-image: url(../img/veebimajutus.png);
+	}
+	div#fifth{
+		background-image: url(../img/meeldiv.png);
+	}
+	div#sixth{
+		background-image: url(../img/eril.png);
+	}
+
+	.chooseTog {
+		opacity:1;
+	}
+
+}
+
+
+@media screen and (max-width: 950px) {
+	section.whyUs {
+		.choose {
+			height:120px;
+			width:30%;
+			margin-left:auto;
+			margin-right:auto;
+			margin-top:2%;
+			margin-bottom:2%;
+			cursor: hand;
+			cursor: pointer;
+			float:none;
+		}
+		h2.hidden2{
+			opacity: 1;
+			margin-left:auto;
+			margin-right:auto;
+			text-align: center;
+			display:block;
+		}
+		.container{
+			height:0px;
+		}
+	}
+}

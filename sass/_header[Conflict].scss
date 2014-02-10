@@ -1,0 +1,189 @@
+header{
+	height:120px;
+	width:100%;
+
+	.logo{
+		padding-top:50px;
+		height:70px;
+		width:150px;
+		margin-left:auto;
+		margin-right:auto;
+		background-image: url("../img/logo.png");
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
+}
+
+section.front {
+	margin-bottom:50px;
+	min-height: 650px;
+	.frontImage{
+		font-family: 'arvoregular';
+		background-size:contain;
+		background-repeat:no-repeat;
+		background-position: bottom right;
+		width:100%;
+		min-height:600px;
+		background-image: url("../img/voolitud.jpg");
+		p{
+			color: $grey;
+			text-shadow: 0 0 1px rgba(0,0,0,0.3);
+		}
+		p.savi {
+			padding:0px;
+			margin-top:50px;
+			margin-bottom: 0px;
+			font-size: 8em;
+		}
+		p.voolime {
+			font-size: 2.9em;
+			margin:0px;
+		}
+		p.tagame {
+			font-size:1.73em;
+			width:50%;
+			font-family:"HelveticaNeueLTCom65Medium";
+			-webkit-font-smoothing:antialiased;
+			line-height:1.2em;
+		}
+	}
+}
+
+nav {
+	
+	width:100%;
+	ul{
+		list-style-type:none;
+	}
+	li {
+		&:hover {
+			a{color: $blue;}
+		}
+		&.active {
+			a{color: $blue;}
+		}
+		float:none;
+		margin-left:5%;
+		margin-right:5%;
+		display:inline;
+	}
+	a{
+		font-family: 'arvoregular';
+		color: $grey;
+		text-decoration:none;
+		&:active{
+			background-color: transparent;
+		}
+		&:focus {
+			border:none;
+		}
+	}
+}
+
+.navStatic{
+	position:fixed;
+	top:0px;
+	background-color:white;
+	border-bottom:solid 2px $grey;
+	z-index: 900;
+	height:80px;
+	right:0px;
+
+	ul{
+		width:60%;
+		margin-left:auto;
+		margin-right:auto;
+		padding-left:45%;
+		margin-top: 30px;
+		}
+}
+
+.liStatic{
+	margin-top:3%;
+	margin-left:2%;
+	margin-right:2%;
+}
+
+.logoFixed {
+	position:fixed;
+	top: -150px;
+	z-index:901;
+	left:20%;
+}
+
+.logoMove {
+	top:-43px;
+}
+
+
+/***************** RESPONSIVE  ***********************/
+
+@media screen and (max-width: 1590px) {
+	section.front {
+		.frontImage{
+			p.savi {
+				padding:0px;
+				margin-top:50px;
+				margin-bottom: 0px;
+				font-size: 7em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1399px) {
+	section.front {
+		.frontImage{
+			p.savi {
+				padding:0px;
+				margin-top:50px;
+				margin-bottom: 0px;
+				font-size: 6em;
+			}
+			p.voolime {
+				font-size: 2.5em;
+				margin:0px;
+		  	}
+			p.tagame {
+			font-size:1.5em;
+			width:50%;
+			font-family:"HelveticaNeueLTCom65Medium";
+			-webkit-font-smoothing:antialiased;
+			line-height:1.2em;
+			}
+		}
+		nav{
+			ul{
+				li{
+					margin-left: 3%;
+					margin-right: 3%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	section.front {
+		min-height: 500px;
+		.frontImage{
+			min-height:400px !important;
+			background-position: 50px right;
+			p.savi {
+				padding:0px;
+				margin-top:50px;
+				margin-bottom: 0px;
+				font-size: 5em;
+			}
+			p.voolime {
+				font-size: 2.2em;
+				margin:0px;
+		  	}
+			p.tagame {
+			font-size:1.3em;
+			width:50%;
+			font-family:"HelveticaNeueLTCom65Medium";
+			-webkit-font-smoothing:antialiased;
+			line-height:1.2em;
+			}
+		}
+	}
+}

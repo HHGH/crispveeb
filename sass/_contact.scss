@@ -1,0 +1,90 @@
+section.contact{
+	min-height: 500px;
+	input, textarea{
+		border: solid 1px $lightGrey;
+		background-color: transparent;
+		outline: none;
+		position:relative;
+		-webkit-box-sizing: border-box;
+       	-moz-box-sizing: border-box;
+        box-sizing: border-box;
+        float:left;
+        color: $lightGrey;
+        font-family: sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        &:focus{
+			border: solid 1px $blue;
+			color: $darkGrey;
+		}
+	}
+	input#name, input#mail{
+		-webkit-box-sizing: border-box;
+       	-moz-box-sizing: border-box;
+        box-sizing: border-box;
+		height: 45px;
+		width: 49%;
+		padding:5px;
+		margin:0px;
+		&:required {
+			box-shadow: none;
+		}
+
+
+	}
+	input#name{
+		margin-left:0px;
+		margin-right: 1%;
+	}
+	input#button{
+		height:45px;
+		margin-top:2%;
+		float:right;
+		width:25%;
+		line-height: normal;
+		&:hover{
+			background-color: $lightGrey;
+			color: white;
+		}
+	}
+	input#mail{
+		margin-right:0px;
+		margin-left: 1%;
+	}
+	form{
+		width:65%;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+		padding:0px;
+		-webkit-box-sizing: border-box;
+       	-moz-box-sizing: border-box;
+        box-sizing: border-box;
+	}
+	textarea{
+		width: 100%;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:2%;
+		height: 200px;
+		padding: 2%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	section.contact{
+		form{
+			width:95%;
+		}
+		input#name, input#mail{
+		height: 45px;
+		width: 100%;
+		margin-top: 2%;
+		margin-left: 0px;
+		margin-right: 0px;
+
+		}
+	}
+
+}
+
